@@ -42,6 +42,7 @@ var app = {
             title: "hello wolrd",
             text: "notificacao",
             at: tempo,
+            icon: 'icon.png',
             every: "minute"
         });
 
