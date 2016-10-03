@@ -39,11 +39,15 @@ var app = {
         var tempo = new Date(agora + 10 * 1000);
         cordova.plugins.notification.local.schedule({            
             id: 1,
-            title: "hello wolrd",
-            text: "notificacao",
+            title: "Quantum",
+            text: "Ticket #1234: texto",
             at: tempo,
-            icon: 'icon.png',
+            icon: './img/icon.png',
             every: "minute"
+        });
+
+        cordova.plugins.notification.local.on("click", function(notification){
+            alert("clicou na notificação");
         });
 
     },
